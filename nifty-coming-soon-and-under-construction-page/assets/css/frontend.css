@@ -3101,6 +3101,7 @@ body.intro-animation-enabled .nifty-coming-soon-message ul {
 }
 .nifty-coming-soon-message ul {
   list-style-type: none;
+  padding: 0;
 }
 
 .nifty-heading {
