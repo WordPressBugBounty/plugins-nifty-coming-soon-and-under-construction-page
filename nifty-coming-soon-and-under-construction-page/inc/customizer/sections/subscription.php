@@ -226,7 +226,7 @@ $wp_customize->add_setting(
 		'capability'        => 'manage_options',
 		'type'              => 'option',
 		'transport'         => 'postMessage',
-		'sanitize_callback' => array( Sanitize::class, 'email' ),
+		'sanitize_callback' => array( Sanitize::class, 'text' ),
 	)
 );
 $wp_customize->add_control(
