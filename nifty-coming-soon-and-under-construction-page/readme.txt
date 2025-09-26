@@ -5,7 +5,7 @@ Tags: coming soon, coming soon page, launch page, maintenance mode, maintenance 
 Tested up to: 6.8
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Stable tag: 3.0.14
+Stable tag: 3.0.15
 Requires PHP: 5.6
 Requires at least: 4.9
 
@@ -95,6 +95,9 @@ Logged in users will NOT see the Coming Soon page. To see and customize the sett
 2. Screenshot 2
 
 == Changelog ==
+
+= 3.0.15 - 26 Sep 2025 =
+- Fix PHP deprecated creation of dynamic property
 
 = 3.0.14 - 15 Apr 2025 =
 - Fix coming soon message CSS issue

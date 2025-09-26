@@ -3,7 +3,7 @@
  * Plugin Name: Nifty Coming Soon & Maintenance Page
  * Plugin URI: https://wphait.com/plugins/nifty-coming-soon-and-under-construction-page/
  * Description: Easy to set up Coming Soon, Maintenance and Under Construction page. It features Responsive design, Countdown timer, Animations, Live Preview, Background Slider, Subscription form and more.
- * Version: 3.0.14
+ * Version: 3.0.15
  * Author: WP Hait
  * Author URI: https://wphait.com/
  * Text Domain: nifty-coming-soon-and-under-construction-page
@@ -15,7 +15,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'NCSUCP_VERSION', '3.0.14' );
+define( 'NCSUCP_VERSION', '3.0.15' );
 define( 'NCSUCP_SLUG', 'nifty-coming-soon-and-under-construction-page' );
 define( 'NCSUCP_BASE_NAME', basename( __DIR__ ) );
 define( 'NCSUCP_BASE_FILEPATH', __FILE__ );
