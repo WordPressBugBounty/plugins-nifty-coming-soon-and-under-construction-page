@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Main coming template part
  *
@@ -10,12 +11,12 @@
 <html <?php language_attributes(); ?>>
 
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<?php
-	if ( is_customize_preview() ) {
+	if (is_customize_preview()) {
 		wp_head();
 	}
 	?>
@@ -31,13 +32,17 @@
 			<?php
 			$all_blocks = nifty_cs_all_page_blocks();
 
-			$page_blocks = nifty_cs_get_option( 'page_blocks' );
+			$page_blocks = nifty_cs_get_option('page_blocks');
 
-			if ( ! empty( $page_blocks ) && is_array( $page_blocks ) ) {
-				foreach ( $page_blocks as $item ) {
-					if ( isset( $all_blocks[ $item ] ) ) {
-						$template = $all_blocks[ $item ]['template'];
-						require NCSUCP_DIR . "/{$template}";
+			if (! empty($page_blocks) && is_array($page_blocks)) {
+				foreach ($page_blocks as $item) {
+					if (isset($all_blocks[$item])) {
+						$template = $all_blocks[$item]['template'];
+						$template_file = realpath(NCSUCP_DIR . "/{$template}");
+
+						if ($template_file && strpos($template_file, realpath(NCSUCP_DIR)) === 0) {
+							include $template_file;
+						}
 					}
 				}
 			}
@@ -47,11 +52,12 @@
 	</div><!-- .nifty-main-wrapper -->
 
 	<?php
-	if ( is_customize_preview() ) {
+	if (is_customize_preview()) {
 		wp_footer();
 	}
 	?>
 	<?php nifty_cs_footer(); ?>
 
 </body>
+
 </html>

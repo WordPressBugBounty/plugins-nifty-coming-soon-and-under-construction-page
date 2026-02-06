@@ -2,10 +2,10 @@
 
 Contributors: hookandhook
 Tags: coming soon, coming soon page, launch page, maintenance mode, maintenance page, coming soon mode, under construction, maintenance mode page, landing page, offline page, subscribe form, maintenance, maintenance mode with countdown timer, maintenance mode with timer, coming soon plugin, wp coming soon, wordpress under construction, under construction page, wp maintenance, wordpress coming soon page, simple maintenance mode, custom coming soon, custom maintenance mode
-Tested up to: 6.8
+Tested up to: 6.9
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Stable tag: 3.0.15
+Stable tag: 3.0.17
 Requires PHP: 5.6
 Requires at least: 4.9
 
@@ -95,6 +95,12 @@ Logged in users will NOT see the Coming Soon page. To see and customize the sett
 2. Screenshot 2
 
 == Changelog ==
+
+= 3.0.17 - 27 Dez 2025 =
+- Fix white screen read only bug
+
+= 3.0.16 - 05 Dez 2025 =
+- Update tested up to 6.9
 
 = 3.0.15 - 26 Sep 2025 =
 - Fix PHP deprecated creation of dynamic property
